@@ -4,7 +4,7 @@
 ## 2. Implementation of different categories of operators.
 # Ex.No:1
   Build a C program to demonstrate the usage of different types of literals: integer, float, character, and string.  
-# Date : 
+# Date : 29/01/2026
 # Aim:
 To build a C program that prints integer, float,character, and string literals on the console using the printf() function.
 # Algorithm:
@@ -26,7 +26,25 @@ To build a C program that prints integer, float,character, and string literals o
 ### Step 4: 
    Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    int number = 10;
+    float price = 25.5;
+    char letter = 'C';
+    char text[] = "Welcome to C";
+    printf("Integer value: %d\n", number);
+    printf("Float value: %.1f\n", price);
+    printf("Character value: %c\n", letter);
+    printf("String value: %s\n", text);
+
+    return 0;
+}
+```
 # Output:
+<img width="501" height="417" alt="image" src="https://github.com/user-attachments/assets/384e4766-3106-43f3-97c5-8a1403024a7a" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -35,7 +53,7 @@ Thus, the program was implemented and executed successfully, and the required ou
 # IAPR-1- Module 1 - FoC
 # Ex.No:2
   Build a C program to display the value of a macro constant and a constant variable.
-# Date : 
+# Date : 29/1/2026
 # Aim:
   To build a C program that demonstrates the use of macro constants and constant variables.
 # Algorithm:
@@ -57,7 +75,19 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 6:  
   Stop
 # Program:
+```
+#include <stdio.h>
+#define MAX 100
+int main() {
+    const int MIN = 10;
+    printf("Macro constant MAX = %d\n", MAX);
+    printf("Constant variable MIN = %d\n", MIN);
+    return 0;
+}
+```
 # Output:
+<img width="535" height="324" alt="image" src="https://github.com/user-attachments/assets/26daf362-9ef5-4272-8c92-0caae0d687b0" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -81,9 +111,25 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 5:    
    Stop
 # Program:
+```
+#include <stdio.h>
+int main() {
+    int count = 10;           
+    float price = 25.75f;     
+    double distance = 123.456; 
+    char grade = 'A';         
+    printf("Integer value: %d\n", count);
+    printf("Float value: %.2f\n", price);
+    printf("Double value: %.3lf\n", distance);
+    printf("Character value: %c\n", grade);
+    return 0;
+}
+```
 # Output:
-# Result: 
+<img width="466" height="365" alt="image" src="https://github.com/user-attachments/assets/35e9ce1b-d95e-4dc3-8781-ada17063f9f5" />
 
+# Result: 
+Thus, the program was implemented and executed successfully, and the required output was obtained.
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
 # IAPR-1- Module 1 - FoC
 # Ex.No:4
@@ -120,7 +166,38 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    printf("Enter two integers: ");
+    scanf("%d %d", &a, &b);
+    printf("\nArithmetic Operations:\n");
+    printf("Addition (a + b): %d\n", a + b);
+    printf("Subtraction (a - b): %d\n", a - b);
+    printf("Multiplication (a * b): %d\n", a * b);
+
+    if (b != 0) {
+        printf("Division (a / b): %d\n", a / b);
+        printf("Remainder (a %% b): %d\n", a % b);
+    } else {
+        printf("Division and Remainder not possible (division by zero)\n");
+    }
+    printf("\nBitwise Operations:\n");
+    printf("AND (a & b): %d\n", a & b);
+    printf("OR (a | b): %d\n", a | b);
+    printf("XOR (a ^ b): %d\n", a ^ b);
+    printf("Left Shift (a << 1): %d\n", a << 1);
+    printf("Right Shift (a >> 1): %d\n", a >> 1);
+    printf("NOT (~a): %d\n", ~a);
+
+    return 0;
+}
+```
 # Output:
+<img width="348" height="488" alt="image" src="https://github.com/user-attachments/assets/3e2a72f8-790e-4d3d-b588-0b9d3ad8bb5c" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -165,7 +242,26 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+int main() {
+    char ch;
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+    (ch >= '0' && ch <= '9') ?
+        printf("The character is a Digit.\n") :
+    ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) ?
+        ((ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U' ||
+          ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') ?
+            printf("The character is a Vowel.\n") :
+            printf("The character is a Consonant.\n")) :
+        printf("The character is a Special Symbol.\n");
+    return 0;
+}
+```
 # Output:
+<img width="544" height="365" alt="image" src="https://github.com/user-attachments/assets/e5f5199c-9f3e-4364-ac10-5faf9bfce9e0" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
